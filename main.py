@@ -6,7 +6,7 @@ import os
 app = FastAPI()
 
 # Set up templates directory
-templates = Jinja2Templates(directory="app_demo/templates")
+templates = Jinja2Templates(directory="fast_demo/templates")
 
 @app.get("/", response_class=HTMLResponse)
 async def get_form(request: Request):
